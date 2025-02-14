@@ -1,0 +1,16 @@
+{
+    "name": "Chromingorou",
+    "version": "0.0.0",
+    "manifest_version": 3,
+    "description": "文末に「んご」を追加したり，たまに「こいつはりんごろう」とノルマ達成してくれる拡張機能．",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
