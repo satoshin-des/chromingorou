@@ -25,6 +25,28 @@ function replaceNgo(node) {
                 }
             }
         );
+
+        // ？->んご？
+        node.textContent = node.textContent.replace(/？/g,
+            function () {
+                if (Math.floor(Math.random() * 5) === 0) {
+                    return "んご？こいつはりんごろう。";
+                } else {
+                    return "んご？";
+                }
+            }
+        );
+
+        // ！->んご！
+        node.textContent = node.textContent.replace(/！/g,
+            function () {
+                if (Math.floor(Math.random() * 5) === 0) {
+                    return "んご！こいつはりんごろう！";
+                } else {
+                    return "んご！";
+                }
+            }
+        );
     } else {
         node.childNodes.forEach(replaceNgo);
     }
