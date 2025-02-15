@@ -1,6 +1,6 @@
 {
     "name": "Chromingorou",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "manifest_version": 3,
     "author": "satoshin",
     "icons": {
@@ -12,10 +12,7 @@
             "matches": [
                 "<all_urls>"
             ],
-            "js": [
-                "replaceNgo.js",
-                "ringoToYamagata.js"
-            ]
+            "js": ["main.js"]
         }
     ],
     "homepage_url": "https://github.com/satoshin-des/chromingorou"
